@@ -1,8 +1,8 @@
 import { rest } from 'msw';
-import data from './keywork_insert.json';
+import keyword from './keyword_insert.json';
 
 export const handlers = [
-  rest.get('/api/data', (req, res, ctx) => {
-    return res(ctx.json(data));
+  rest.get('/api/keyword', (req, res, ctx) => {
+    return res(ctx.json(keyword));
   }),
 ];

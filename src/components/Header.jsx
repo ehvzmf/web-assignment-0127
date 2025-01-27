@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     return (
         <HeaderContainer>
-            <Logo><img src="/data/idivine.svg" alt="logo" /></Logo>
+            <Logo><img src="/public/idivine.svg" alt="logo" /></Logo>
             <Nav>
                 <NavLink to="/" exact activeClassName="active">Finder</NavLink>
                 <NavLink to='/manager' activeClassName="active">Manager</NavLink>
