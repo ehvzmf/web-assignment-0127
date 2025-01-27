@@ -7,12 +7,26 @@ function Finder() {
     const [annotations, setAnnotations] = useState([]);
 
     const handleSearch = () => {
-        
+
       };
 
     return (
         <Container>
-            
+          <Section>
+            <Label htmlFor="pmid">PMID:</Label>
+            <Input
+              id="pmid"
+              value={pmid}
+              onChange={(e) => setPmid(e.target.value)}
+              placeholder="Enter PMID"
+            />
+            <Button onClick={handleSearch}>Search</Button>
+          </Section>
+
+          <Section>
+            <Label>Text:</Label>
+            <TextArea value={text} readOnly />
+          </Section>
         </Container>
     )
 }
